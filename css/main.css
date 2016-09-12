@@ -1,0 +1,119 @@
+body {
+    background: #e24273;
+    margin: 0;
+    padding: 0;
+}
+
+.funk {}
+
+.animation-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/funkhusky.png') center center no-repeat contain;
+}
+
+.logo {
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    animation: move 2s infinite;
+    transform: scaleX(-1);
+}
+
+.logo .path {
+    animation: rainbow 2s infinite;
+    fill: white;
+}
+
+.logo-1 {
+    z-index: 100;
+    animation: none;
+}
+
+.logo-1 .path {
+    animation: none;
+}
+
+.logo-2,
+.logo-2 .path {
+    z-index: 80;
+    /*animation-delay: 0.33s;*/
+}
+
+.logo-3,
+.logo-3 .path {
+    z-index: 60;
+    animation-delay: 0.33s;
+}
+
+.logo-4,
+.logo-4 .path {
+    z-index: 50;
+    animation-delay: 0.66s;
+}
+
+.logo-5,
+.logo-5 .path {
+    z-index: 40;
+    animation-delay: 1s;
+}
+
+.logo-6,
+.logo-6 .path {
+    z-index: 30;
+    animation-delay: 1.33s;
+}
+
+.logo-7,
+.logo-7 .path {
+    z-index: 20;
+    animation-delay: 1.66s;
+}
+
+@keyframes move {
+    0% {
+        transform: scaleX(-1) translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(-1) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        fill: red;
+    }
+
+    20% {
+        fill: red;
+    }
+
+    40% {
+        fill: orange;
+    }
+
+    50% {
+        fill: yellow;
+    }
+
+    65% {
+        fill: green;
+    }
+
+    75% {
+        fill: blue;
+    }
+
+    90% {
+        fill: purple;
+    }
+
+    100% {
+        fill: purple;
+    }
+}
