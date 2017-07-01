@@ -1,0 +1,14 @@
+.contact a {
+    display: block;
+    color: white;
+    padding: 0.7rem;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
